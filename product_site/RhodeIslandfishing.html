@@ -9,10 +9,22 @@
     <body>
         <div class="header-div">
             <a href="RhodeIslandfishing.html" class="active">Home</a>
+        
+            
+            <a href="#" id="locationsDropdown">Locations</a>
+            <a href="#" id="fishDropdown">Fish</a>
+        
+            <img src="images/Small_logo.png" alt="Logo" class="header-logo">
+        </div>
+        
+    
+        <div id="locationsMenu" class="dropdown-menu">
             <a href="blockisland.html">Block Island</a>
+        </div>
+        
+        <div id="fishMenu" class="dropdown-menu">
             <a href="flukefishing.html">Fluke</a>
             <a href="stripedbassfishing.html">Striped Bass</a>
-            <img src="images/Small_logo.png" alt="Logo" class="header-logo">
         </div>
 
         <div class="main-content">
@@ -44,6 +56,16 @@
                 This site aims to simplify everything you might need to get started fishing in the area.<br>
                 Here, we have all the information you could need, from regulations to recommended equipment.
             </p>
+
+            <div class="pricing-section">
+                <h3>Book Your Fishing Trip</h3>
+                <p>Select the number of trips to see your discounted price:</p>
+                <button onclick="calculatePrice(1)">1 Trip</button>
+                <button onclick="calculatePrice(2)">2 Trips</button>
+                <button onclick="calculatePrice(3)">3 Trips</button>
+                <p id="priceDisplay">Total Price: </p>
+            </div>
+            
 
             <h2>Rhode Island Recreational Fishing Regulations</h2>
             <table>
@@ -202,5 +224,7 @@
                 <a id="Email" href="mailto:hgrenier@uri.edu"> hgrenier@uri.edu </a>
             </p>
         </div>
+        <script src="js/simple_script.js"></script>
+        <script src="js/drop_down_menu.js"></script>
     </body>
 </html>
