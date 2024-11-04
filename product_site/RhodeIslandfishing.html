@@ -29,6 +29,7 @@
 
         <div class="main-content">
             <h1>Fishing off Rhode Island</h1>
+            <p id="seasonalMessage"></p>
             <img src="images/lighthouse.jpg" alt="Picture of a lighthouse">
             <img src="images/beach_fishing.jpg" alt="Picture of two people fishing on the beach">
 
@@ -58,13 +59,20 @@
             </p>
 
             <div class="pricing-section">
+                
                 <h3>Book Your Fishing Trip</h3>
                 <p>Select the number of trips to see your discounted price:</p>
                 <button onclick="calculatePrice(1)">1 Trip</button>
                 <button onclick="calculatePrice(2)">2 Trips</button>
                 <button onclick="calculatePrice(3)">3 Trips</button>
                 <p id="priceDisplay">Total Price: </p>
+                <div class="countdown-container">
+                    <p id="seasonCountdown"></p>
+                </div>
             </div>
+
+            <h3>Popular Fish in Rhode Island Waters:</h3>
+            <ul id="popularFishList"></ul>
             
 
             <h2>Rhode Island Recreational Fishing Regulations</h2>
