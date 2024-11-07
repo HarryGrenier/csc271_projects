@@ -234,6 +234,20 @@ img {
     margin-top: 15px;
 }
 
+#seasonalMessage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    background-color: #E3F2FD;
+    padding: 10px;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 @media screen and (max-width: 600px) {
     .header-div a {

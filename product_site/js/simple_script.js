@@ -1,9 +1,8 @@
 // Pricing constants
-const basePrice = 100; // Base price per trip in USD
 const discounts = { 1: 0, 2: 0.05, 3: 0.1 }; // Discounts: 5% for 2 trips, 10% for 3 trips
 
 // Function to calculate price based on the number of trips
-function calculatePrice(numTrips) {
+function calculatePrice(numTrips,basePrice) {
     const discount = discounts[numTrips] || 0;
     const totalPrice = (basePrice * numTrips) * (1 - discount);
 
@@ -12,18 +11,20 @@ function calculatePrice(numTrips) {
     priceDisplay.textContent = `Total Price for ${numTrips} Trip(s): $${totalPrice.toFixed(2)}`;
 }
 
-// Decision structure for displaying seasonal messages based on month
-function displaySeasonalMessage() {
-    const month = new Date().getMonth() + 1; // Current month (1-12)
-    let message = "";
-
-    if (month >= 5 && month <= 8) { // Summer
-        message = "It's prime fishing season!";
-    } else if (month >= 9 && month <= 11) { // Fall
-        message = "Fall fishing season is perfect for striped bass!";
+// Generates seasonal message to display
+function getSeasonalMessage() {
+    const month = new Date().getMonth() + 1;
+    if (month >= 5 && month <= 8) {
+        return "Prime Fishing Season!";
     } else {
-        message = "Bundle up!!";
+        return "Prepare for cooler waters.";
     }
+}
+
+// Function to display seasonal message
+function displaySeasonalMessage() {
+    // Call getSeasonalMessage to get the message
+    const message = getSeasonalMessage();
 
     // Display the message in the designated element
     const seasonalMessage = document.getElementById("seasonalMessage");
@@ -31,6 +32,7 @@ function displaySeasonalMessage() {
         seasonalMessage.textContent = message;
     }
 }
+
 
 // Loop to dynamically create a list of popular fish species
 const fishList = ["Striped Bass", "Bluefish", "Fluke", "Black Sea Bass"];
@@ -69,8 +71,8 @@ function styleDropdownLinks() {
 
 // Run functions on page load
 window.onload = function() {
-    displaySeasonalMessage();
     displayFishList();
     daysUntilSeasonStart();
     styleDropdownLinks();
+    displaySeasonalMessage();
 };
