@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Select the dropdown triggers
     var locationsDropdown = document.getElementById('locationsDropdown');
     var fishDropdown = document.getElementById('fishDropdown');
+
+
+    // select home button
+    var home = document.getElementById('Home');
     
     // Select the dropdown menus
     var locationsMenu = document.getElementById('locationsMenu');
@@ -13,16 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Event listeners for the dropdown triggers
-    locationsDropdown.addEventListener('click', function (event) {
+    locationsDropdown.addEventListener('mouseover', function (event) {
         event.preventDefault();
         toggleMenu(locationsMenu);
         fishMenu.style.display = "none"; // Close other menu
     });
 
-    fishDropdown.addEventListener('click', function (event) {
+    fishDropdown.addEventListener('mouseover', function (event) {
         event.preventDefault();
         toggleMenu(fishMenu);
         locationsMenu.style.display = "none"; // Close other menu
+    });
+
+    home.addEventListener('mouseover', function (event) {
+        event.preventDefault();
+        locationsMenu.style.display = "none";
+        fishMenu.style.display = "none";
     });
 
     // Close dropdowns if clicked outside
