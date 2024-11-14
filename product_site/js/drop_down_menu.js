@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         locationsMenu.style.display = "none"; // Close other menu
     });
 
+    // If hovering over home close both menu's
     home.addEventListener('mouseover', function (event) {
         event.preventDefault();
         locationsMenu.style.display = "none";
