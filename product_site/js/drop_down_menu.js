@@ -17,21 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Event listeners for the dropdown triggers
-    locationsDropdown.addEventListener('mouseover', function (event) {
-        event.preventDefault();
+    locationsDropdown.addEventListener('mouseover', function () {
         toggleMenu(locationsMenu);
         fishMenu.style.display = "none"; // Close other menu
     });
 
-    fishDropdown.addEventListener('mouseover', function (event) {
-        event.preventDefault();
+    fishDropdown.addEventListener('mouseover', function () {
         toggleMenu(fishMenu);
         locationsMenu.style.display = "none"; // Close other menu
     });
 
     // If hovering over home close both menu's
-    home.addEventListener('mouseover', function (event) {
-        event.preventDefault();
+    home.addEventListener('mouseover', function () {
         locationsMenu.style.display = "none";
         fishMenu.style.display = "none";
     });
