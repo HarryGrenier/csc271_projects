@@ -9,7 +9,7 @@ function FishingData(species, minimumSize, season, possessionLimit, noBorder = f
     // Method to determine if the border should be removed
     this.applyNoBorder = function(rowElement) {
         if (this.noBorder) {
-            rowElement.style.borderBottom = "none"; // Remove bottom border
+            rowElement.classList.add("no-border"); // Add the no-border class
         }
     };
 }
