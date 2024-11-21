@@ -76,143 +76,18 @@
             
 
             <h2>Rhode Island Recreational Fishing Regulations</h2>
-            <table>
-                <tr>
-                    <th>Species</th>
-                    <th>Minimum Size</th>
-                    <th>Season</th>
-                    <th>Possession Limit</th>
-                </tr>
-                <tr>
-                    <td>American eel</td>
-                    <td>9"</td>
-                    <td>1/1 - 12/31</td>
-                    <td>25 eels/person/day<br><br>50 eels/vsl/day for licensed party/charter vessels</td>
-                </tr>
-                <tr>
-                    <td>American plaice (dab)</td>
-                    <td>14"</td>
-                    <td>1/1 - 12/31</td>
-                    <td>No limit</td>
-                </tr>
-                <tr>
-                    <td >Black Sea Bass<br><em>General Recreational</em></td>
-                    <td >16.5"</td>
-                    <td>5/22 - 8/26</td>
-                    <td>2 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td>Bluefish</td>
-                    <td>No minimum</td>
-                    <td>1/1 - 12/31</td>
-                    <td>3 fish/person/day</td>
-                </tr>
-                <tr class="no-border">
-                    <td>Cod</td>
-                    <td >23"</td>
-                    <td>1/1 - 5/31</td>
-                    <td>5 fish/person/day</td>
-                </tr>
-                <tr class="no-border">
-                    <td></td>
-                    <td></td>
-                    <td>6/1 - 8-31</td>
-                    <td>Closed</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>9/1 - 12/31</td>
-                    <td>5 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td><a href="flukefishing.html">Summer Flounder (Fluke)</a></td>
-                    <td>19"</td>
-                    <td>4/1 - 12/31</td>
-                    <td>6 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td>Monkfish(Goosefish)</td>
-                    <td>17" whole<br>11" tail</td>
-                    <td>1/1 - 12/31</td>
-                    <td>50 lbs tails/day or 166 lbs whole/day</td>
-                </tr>
-                <tr>
-                    <td>Haddock</td>
-                    <td>18"</td>
-                    <td>1/1 - 12/31</td>
-                    <td>No limit</td>
-                </tr>
-                <tr>
-                    <td>Pollock</td>
-                    <td>19"</td>
-                    <td><br>1/1 - 12/31</td>
-                    <td>No limit</td>
-                </tr>
-                <tr>
-                    <td>Skate</td>
-                    <td>No minimum</td>
-                    <td>1/1 - 12/31</td>
-                    <td>10 fish/person/day</td>
-                </tr>
-                
-                <tr>
-                
-                    <td><a href="stripedbassfishing.html">Striped Bass</a></td>
-                    <td>28"-31"</td>
-                    <td>1/1 - 12/31</td>
-                    <td>1 fish/person/day</td>
-                
-                </tr>
-                <tr class="no-border">
-                    <td>Tautog</td>
-                    <td >16"<br>Only one fish may be greater than 21"<br>
-                    Max of 10 fish/vsl during all periods</td>
-                    <td>4/1 - 5/31</td>
-                    <td>3 fish/person/day</td>
-                </tr>
-                <tr class="no-border">
-                    <td></td>
-                    <td></td>
-                    <td>6/1 - 7/31</td>
-                    <td>CLOSED</td>
-                </tr>
-                <tr class="no-border">
-                    <td></td>
-                    <td></td>
-                    <td>8/1 - 10/14</td>
-                    <td>3 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>10/15 - 12/31</td>
-                    <td>5 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td>Weakfish (Squeteague)</td>
-                    <td>16"</td>
-                    <td>1/1 - 12/31</td>
-                    <td>1 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td>Winter Flounder (Blackback)</td>
-                    <td>12"</td>
-                    <td>3/1 - 12/31</td>
-                    <td>2 fish/person/day</td>
-                </tr>
-                <tr>
-                    <td>Witch Flounder<br>(Gray Sole)</td>
-                    <td>14</td>
-                    <td>1/1 - 12/31</td>
-                    <td>No limit</td>
-                </tr>
-                <tr>
-                    <td>Yellowtail Flounder</td>
-                    <td>13"</td>
-                    <td>1/1 - 12/31</td>
-                    <td>No limit</td>
-                </tr>
+            <table id="fishingTable">
+                <thead>
+                    <tr>
+                        <th>Species</th>
+                        <th>Minimum Size</th>
+                        <th>Season</th>
+                        <th>Possession Limit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here by JavaScript -->
+                </tbody>
             </table>
             <p>Do you like fishing:</p>
             <label for="name">Name:</label><br>
@@ -232,6 +107,7 @@
                 <a id="Email" href="mailto:hgrenier@uri.edu"> hgrenier@uri.edu </a>
             </p>
         </div>
+        <script src="js/fishingData.js"></script>
         <script src="js/simple_script.js"></script>
         <script src="js/drop_down_menu.js"></script>
         <script src="js/formValidation.js"></script>
