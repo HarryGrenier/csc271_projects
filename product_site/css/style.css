@@ -173,16 +173,33 @@ iframe {
 }
 
 .main-content {
-    width: 75%;
+    width: 70%;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    border-radius: 5px;
     margin-right: 20px;
 }
 
-.main-content img.block-island-img {
-    max-width: 25%;
-    height: auto;
+.page-container {
+    display: flex;
+    align-items: flex-start;
 }
+
+.right-side-images {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .Newtopic {
     display: block;
